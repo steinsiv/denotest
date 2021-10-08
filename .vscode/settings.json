@@ -1,0 +1,27 @@
+{
+  "deno.enable": true,
+  "deno.unstable": true,
+  "deno.lint": true,
+  "deno.import_intellisense_origins": {
+    "https://deno.land": true
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "denoland.vscode-deno"
+  },
+  "deno.suggest.imports.hosts": {
+    "https://deno.land": true
+  },
+  "bracket-pair-colorizer-2.colorMode": "Consecutive",
+
+  "bracket-pair-colorizer-2.colors": [
+    "#c28e60",
+    "#00b4d6",
+    "#f4e286"
+  ],
+  "bracket-pair-colorizer-2.unmatchedScopeColor": "#ba4d06",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.organizeImports": true
+  },
+  "deno.config": "deno.json"
+}

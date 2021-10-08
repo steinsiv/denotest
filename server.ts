@@ -1,10 +1,4 @@
-import {
-  Application,
-  Context,
-  cryptoRandomString,
-  dotEnvConfig,
-  Router,
-} from "./deps.ts";
+import { Application, Context, cryptoRandomString, dotEnvConfig, Router } from "./deps.ts";
 
 import {
   AccessTokenResponseOptions,
@@ -17,13 +11,8 @@ import {
   URLAuthorizeResponse,
 } from "https://raw.githubusercontent.com/steinsiv/oauth2-dance/main/mod.ts";
 
-// @todo: /revoke
-// @todo: /introspect
-// @todo: /refreshtoken
-
 const router = new Router();
 const env = dotEnvConfig();
-console.log(dotEnvConfig({}));
 
 const codeCache: Map<string, AuthorizationRequestOptions> = new Map();
 const requestCache: { ident: string; req: AuthorizationRequestOptions }[] = [];
